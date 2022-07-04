@@ -1,0 +1,126 @@
+*{
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.container {
+  width: 1320px;
+  margin: 0 auto;
+  padding: 0 180px;
+}
+body{
+  background-color: #f2f2f2;
+}
+.dark_mode{
+  position: relative;
+  width: 100px;
+  height: 40px;
+  right: 280px;
+  top: 0;
+  left: -10px;
+  border: 2px solid;
+  border-radius: 20px;
+}
+.dark_mode::before{
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 1px;
+  left: 1px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: white;
+  background-color: black;
+  color: white;
+  transform: translateX(0px);
+  transition: 0.7s ease;
+}
+.dark_mode.active::before{
+  left: 24px;
+  background: white;
+  transform: translateX(35px);
+  transition: 0.7s ease;
+}
+body.night{
+  background: #092c3e;
+  color: #fff;
+}
+
+.site-header{
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)
+}
+.header{
+  padding: 1px 0;
+}
+.header__content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-main{
+  margin-top: 40px;
+}
+.country__content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.countrys__input{
+  padding: 14px 2px 14px 25px;
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+  background-size: 15px;
+  box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.322);
+  border:none;
+}
+.filtr__input{
+  padding: 14px 2px 14px 25px;
+  background-image: url("../img/");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+  background-size: 15px;
+  box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.322);
+  border:none;
+}
+.third-section{
+  margin-top: 10px;
+}
+.flags{
+}
+.flags__list{
+  padding: 0 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flags__item{
+  background-color: white;
+  width: 210px;
+  height: 260px;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+span{
+  font-weight: bolder;
+}
+.box{
+  padding-left: 10px;
+}
+.box ul{
+  padding-left: 0;
+}
+.box h4{
+  font-weight: 800;
+  font-size: 16px;
+  color: #333D4B;
+}
+.box li{
+  font-weight: 400;
+  font-size: 16px;
+  color: #333D4B;
+}

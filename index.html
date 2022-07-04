@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/main.css">
+  <title>practise</title>
+
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header">
+        <div class="header__content">
+          <h1>Where in the world?</h1>
+          <label class="dark_mode" id="dark-change">
+          </label>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <script>
+    var content = document.getElementsByTagName('body')[0];
+    var darkMode = document.getElementById('dark-change');
+    darkMode.addEventListener('click', function () {
+      darkMode.classList.toggle('active');
+      content.classList.toggle('night');
+    })
+
+  </script>
+
+  <main class="site-main">
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <div class="country__content">
+            <form class="countrys__form" action="#link">
+              <input class="countrys__input" type="text" placeholder="Search for a country...">
+            </form>
+            <form class="countrys__form" action="#link">
+              <label for="Region"></label>
+              <input class=" filtr__input" type="text" list="Region" placeholder="Filtr by Region">
+              <datalist id="Region">
+                <option value="Germany"></option>
+                <option value="United States of America"></option>
+                <option value="Brazil"></option>
+                <option value="Iceland"></option>
+                <option value="Afghanistan"></option>
+                <option value="Aland Island"></option>
+                <option value="Albania"></option>
+                <option value="Algeria"></option>
+              </datalist>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="third-section">
+      <div class="container">
+        <div class="flags">
+          <div class="country__flags">
+            <ul class="flags__list">
+              <li class="flags__item">
+                <img src="./img/flag-germany.png" alt="" width="210px">
+                <div class="box">
+                  <h4>Germany</h4>
+                  <ul>
+                    <li><span>Population:</span> 81,770,900</li>
+                    <li><span>Region:</span> Europe</li>
+                    <li><span>Capital:</span> Berlin</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="flags__item">
+                <img src="./img/america.svg.png" width="210px" height="128px" alt="">
+                <div class="box">
+                  <h4>United States of America</h4>
+                  <ul>
+                    <li><span>Population:</span>323,947,000
+                    <li>
+                      <span>Region:</span>Americas
+                    <li>
+                      <span>Capital:</span>Washington.D.C
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="flags__item">
+                <img src="./img/flag-brazil.png" alt="" width="210px">
+                <div class="box">
+                  <h4>Brazil</h4>
+                  <ul>
+                    <li> <span>Population:</span>206,135,893
+                    <li>
+                      <span>Region:</span>Americas
+                    <li>
+                      <span>Capital:</span>Brasilia
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="flags__item">
+                <img src="./img/island.svg@2x.png" alt="" width="210px" height="128px">
+                <div class="box">
+                  <h4>Iceland</h4>
+                  <ul>
+                    <li><span>Population:</span>334,300
+                    <li>
+                      <span>Region:</span>Europe
+                    <li>
+                      <span>Capital:</span>Reykjavik
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="flags__item">
+                <img src="./img/afgon.jpg" width="210px" height="128px" alt="">
+                <div class="box">
+                  <h4>Afghanistan</h4>
+                  <ul>
+                    <li><span>Population:</span>27,657,145
+                    <li>
+                      <span>Region:</span>Asia
+                    <li>
+                      <span>Capital:</span>Kabul
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="flags__item">
+                <img src="./img/aland.jpg" width="210px" height="128px" alt="">
+                <div class="box">
+                  <h4>Aland Islands</h4>
+                  <ul>
+                    <li><span>Population:</span>28,875
+                    <li>
+                      <span>Region:</span>Europe
+                    <li>
+                      <span>Capital:</span>Mariehamn
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="flags__item">
+                <img src="./img/alban@2x.jpg" width="210px" height="128px" alt="">
+                <div class="box">
+                  <h4>Albania</h4>
+                  <ul>
+                    <li><span>Population:</span>2,886,026
+                    <li>
+                      <span>Region:</span>Europe
+                    <li>
+                      <span>Capital:</span>Tirana
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="flags__item">
+                <img src="./img/algeriya.jpg" width="210px" height="128px" alt="">
+                <div class="box">
+                  <h4>Algeria</h4>
+                  <ul>
+                    <li><span>Population:</span>40,400,000
+                    <li>
+                      <span>Region:</span>Africa
+                    <li>
+                      <span>Capital:</span>Algiers
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
